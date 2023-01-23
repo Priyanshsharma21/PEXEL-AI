@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Inter', sans-serif;
+    /* background: #101010; */
+}
+
+@media screen and (min-width: 480px) {
+    .card:nth-child(7n + 1) {
+        grid-column: auto/span 2;
+        grid-row: auto/span 2;
+    }
+}
+
+.prompt::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+.prompt::-webkit-scrollbar-thumb {
+  background-color: #666e75;
+  border-radius: 5px;
+}
+
+.demo{
+    color: #a802cd;
+    color: #ff5e00;
+    color: #2bff67;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+
+.my-masonry-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -30px;
+    width: auto;
+  }
+  .my-masonry-grid_column {
+    padding-left: 30px;
+    background-clip: padding-box;
+  }
+  
+  .my-masonry-grid_column > div {
+    margin-bottom: 30px;
+  }
